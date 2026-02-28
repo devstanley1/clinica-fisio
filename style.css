@@ -675,7 +675,11 @@ footer p {
   .hero-content,
   .glass-panel {
     flex-direction: column;
-    padding: 3rem;
+    padding: 2rem;
+  }
+
+  .glass-panel {
+    gap: 3rem;
   }
 
   .hero-text {
@@ -683,7 +687,7 @@ footer p {
   }
 
   .hero-text h2 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
 
   .hero-text p {
@@ -705,12 +709,89 @@ footer p {
 }
 
 @media (max-width: 768px) {
-  nav ul {
-    gap: 1rem;
-  }
-
   .nav-content {
     flex-direction: column;
     gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .btn-primary-sm {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .hero {
+    padding: 4rem 0;
+  }
+
+  .hero-text h2 {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .grid-2,
+  .grid-3,
+  .grid-services-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .facilities {
+    padding: 4rem 0;
+  }
+
+  .facilities-main {
+    text-align: center;
+  }
+
+  .facility-list {
+    align-items: center;
+  }
+
+  .glass-panel {
+    padding: 2rem 1.5rem;
+  }
+
+  .booking-form {
+    padding: 2rem 1.5rem;
+  }
+
+  .contact-section {
+    padding: 4rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .card {
+    padding: 2rem 1.5rem;
+  }
+
+  .btn-primary {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .btn-whatsapp,
+  .btn-email {
+    font-size: 1rem;
   }
 }
